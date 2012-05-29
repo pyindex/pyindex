@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %} 函数包含"{{funcname}}" {% endblock %}
+
+{% block context %}
+<h1 id="index" style="width: 100;">函数 &ndash; 名称包含"{{funcname}}" </h1>
+<table width="100%" class="indextable"><tr><td width="33%" valign="top">
+	<div style="width: 100%;">
+		<p> 无法找到: </p>
+		<p> &nbsp; &nbsp; &nbsp; &nbsp; <a href='#'>def1(). </a></p>
+		<p> &nbsp; &nbsp; &nbsp; &nbsp; <a href='#'>def2(). </a></p>
+		<p> &nbsp; &nbsp; &nbsp; &nbsp; <a href='#'>def3(). </a></p>
+		<p> &nbsp; &nbsp; &nbsp; &nbsp; <a href='#'>def4(). </a></p>
+	</div>
+	<br /><hr />
+</td></tr></table>
+{% endblock %}

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Python函数查询-{%block title%}{%endblock%} </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="全球最大的中文 Python 函数搜索引擎。" />
+	<link rel="stylesheet" type="text/css" href="/media/css/index.css" />
+  </head>
+  
+  <body>
+<div  style="float:left; width: 100%; min-width:800px">  
+	<div style="float:left; width: 100%;">
+        <div style="width:240px; float:left;"><center><a href="/" title="python 函数在线查询"><font size='12px' color='red'>PyDef</font></a><h3><font color='white'>Python 函数在线查询平台</font></h3></center></div>
+        <div style="float:left;"></div>
+    </div>  
+	<div style="float:left; width: 100%;"> 
+		<div style="float:left; width: 100%;" class="related">
+			导航条 >> 函数类 >> 字母索引 >> 函数名
+		</div>  
+<hr />
+		<div style="float:left; min-width: 800px; width: 100%;" class="document">
+			<div style="float:left; width: 240px;" class="sphinxsidebar">
+
+<div class="sphinxsidebarwrapper">
+    <div>
+       <h4>索引查询</h4>
+       <p>
+         | <a href="/search/index/#/"><strong>符号</strong></a>
+         | <a href="/search/index/_/"><strong>_(下划线)</strong></a>
+         | <a href="/search/index/A/"><strong>A</strong></a>
+         | <a href="/search/index/B/"><strong>B</strong></a>
+         | <a href="/search/index/C/"><strong>C</strong></a>
+         | <a href="/search/index/D/"><strong>D</strong></a>
+         | <a href="/search/index/E/"><strong>E</strong></a>
+         | <a href="/search/index/F/"><strong>F</strong></a>
+         | <a href="/search/index/G/"><strong>G</strong></a>
+         | <a href="/search/index/H/"><strong>H</strong></a>
+         | <a href="/search/index/I/"><strong>I</strong></a>
+         | <a href="/search/index/J/"><strong>J</strong></a>
+         | <a href="/search/index/K/"><strong>K</strong></a>
+         | <a href="/search/index/L/"><strong>L</strong></a>
+         | <a href="/search/index/M/"><strong>M</strong></a>
+         | <a href="/search/index/N/"><strong>N</strong></a>
+         | <a href="/search/index/O/"><strong>O</strong></a>
+         | <a href="/search/index/P/"><strong>P</strong></a>
+         | <a href="/search/index/O/"><strong>Q</strong></a>
+         | <a href="/search/index/R/"><strong>R</strong></a>
+         | <a href="/search/index/S/"><strong>S</strong></a>
+         | <a href="/search/index/T/"><strong>T</strong></a>
+         | <a href="/search/index/U/"><strong>U</strong></a>
+         | <a href="/search/index/V/"><strong>V</strong></a>
+         | <a href="/search/index/W/"><strong>W</strong></a>
+         | <a href="/search/index/X/"><strong>X</strong></a>
+         | <a href="/search/index/Y/"><strong>Y</strong></a>
+         | <a href="/search/index/Z/"><strong>Z</strong></a>
+         </p>
+    </div>
+         <hr />
+    <div id="searchbox" style="display: block">
+    	<h3>快速查询</h3>
+          <input type="text" id="searchtext" name="input" size="18" />
+          <input type="button" value="G o" onClick="window.location.href='/search/'+document.getElementById('searchtext').value+'/'"/>
+        <p class="searchtip" style="font-size: 90%">函数名，类名，或者模块名的英文部分 </p>
+    </div>
+    <hr />
+    <div>
+        <h3>python函数分类</h3>
+    	<ul> 
+    		{% for fcs in res %}
+    		    <li><ul> <a href='#' onClick="alert('此功能开发中')" >{{ fcs.cname|safe }} + </a>
+    		        {% for f in fcs.fs %}
+    		    	    <li> <a href="/search/{{f}}/" />{{ f }} </a></li>
+    		        {% endfor %}
+    		    	</ul></li>
+    		{% endfor %}
+    	</ul>
+    </div>
+</div>
+			
+			</div>
+			<div style="float:left; width: 70%; height: 600px; margin: 0px 0px 0px px; background-color: #FFFFFF;" class="documentwrapper">
+			
+<div>
+    <div class="body" style="width: 600px;">
+    {%block context%}{%endblock%}
+	</div>
+</div> 
+            </div>
+		</div>
+		<div style="float:left; width: 100%;" class="related">
+			导航条 >> 函数类 >> 字母索引 >> 函数名
+		</div>
+    </div>
+    <div style="float:left; width: 100%;" class="footer">
+<p>Pydef提供的内容仅用于培训。我们不保证内容的正确性。通过使用本站内容随之而来的风险与本站无关。当使用本站时，代表您已接受了本站的使用条款和隐私条款。</p>
+<p>版权所有，保留一切权利。未经书面许可，不得转载。Pydef 简体中文版的所有内容仅供测试，对任何法律问题及风险不承担任何责任。pydef.com All right saved。</p>
+    
+    </div>
+</div> 
+  </body>
+</html>

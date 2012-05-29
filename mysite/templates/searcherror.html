@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %} {{funcname}} {% endblock %}
+
+{% block context %}
+<h1 id="index" style="width: 100;">错误 &ndash; 无法找到</h1>
+<table width="100%" class="indextable"><tr><td width="33%" valign="top">
+	<div style="width: 100%;">
+		<p> 无法找到: </p>
+		<p> &nbsp; &nbsp; &nbsp; &nbsp; 你输入的函数没有在数据库中找到，可能的原因是没有这个函数，或者函数未加入到数据库，需要的话，诚挚的邀请你添加这个函数，<a href='#'>在以下地址. </a></p>
+	</div>
+	<br /><hr />
+</td></tr></table>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %} {{funcname}} {% endblock %}
+
+{% block context %}
+<h2>this is the edit page ! </h2>
+<h2>编辑{{ part_type }} </h2>
+<form action=".">
+    <input type="text" name="txt_id" value="{{txt_id}}" style="display:none"/>
+    <input type="text" name="edit_txt" size='100' value="{{txt.title}}"/>
+    <input type="submit" value='确认修改' />
+    <input type="button" value='取消' />
+</form>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+﻿#-*- coding: utf-8 -*-
+from django.contrib import admin
+from models import func, category, introduction ,params, returns, demo, code
+
+
+admin.site.register(func)
+admin.site.register(category)
+admin.site.register(introduction )
+admin.site.register(params)
+admin.site.register(returns)
+admin.site.register(demo)
+admin.site.register(code)
+
+	
+	
